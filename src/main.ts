@@ -4,6 +4,7 @@ const app = new Application();
 
 app.use((ctx) => {
   ctx.response.body = "Hello world!";
+  
 });
 
 console.log("Server running on port: 8080");
