@@ -33,4 +33,4 @@ jobs:
         docker build . -t murunwas/denoapp:latest
     - name: docker push
       run: |
-        docker push $HUB/murunwas/denoapp:latest
+        docker push cloud.canister.io:5000/murunwas/denoapp:latest
