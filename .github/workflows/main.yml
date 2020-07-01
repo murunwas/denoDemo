@@ -30,7 +30,7 @@ jobs:
         docker login $HUB -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build csharp
       run: |
-        docker build .  -t cloud.canister.io:5000/murunwas/denoapp:latest
+        docker build .  -t murunwas/denoapp:latest
     - name: docker push
       run: |
-        docker push cloud.canister.io:5000/murunwas/denoapp:latest
+        docker push murunwas/denoapp:latest
