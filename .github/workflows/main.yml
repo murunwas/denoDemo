@@ -30,7 +30,7 @@ jobs:
         docker login $HUB -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build csharp
       run: |
-        docker build . -t denoapp:latest
+        docker build . -t murunwas/denoapp:latest
     - name: docker push
       run: |
-        docker push denoapp:latest
+        docker push murunwas/denoapp:latest
